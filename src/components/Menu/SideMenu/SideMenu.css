@@ -1,0 +1,25 @@
+.sideMenuLogo{
+  width: 146px;
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+}
+
+
+@media (min-width: 500px){
+  .bm-burger-button{
+    display: none;
+  }
+}
+
+
+.socialLogo{
+  height: 60px;
+}
+
+.socialHolder{
+  position: absolute;
+  bottom: 0;
+}

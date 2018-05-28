@@ -1,0 +1,82 @@
+.headerMenu{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background: white;
+  z-index: 100;
+  top: 0;
+  justify-items: center;
+  justify-content: flex-end;
+  height: 71px;
+}
+
+
+.headerMenu--list{
+  order: 1;
+  display: flex;
+  list-style-type: none;
+  align-self: center;
+  position: absolute;
+  left: 6%;
+
+}
+
+.smallLogoIllustrationHeader{
+  order: 2;
+  height: 45px;
+}
+
+
+
+/*MAIN NAV STYLING*/
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover{
+  font-family: 'camptonBold';
+}
+
+.is-active{
+  font-family: 'camptonBold';
+  color: black;
+}
+
+
+
+.smallLogoTextHeader{
+  margin-top: 11px;
+  margin-right: 10px;
+  height: 50px;
+  width: auto;
+  order: 3;
+
+}
+
+
+
+
+.headerMenu--item{
+  padding: 10px
+}
+
+@media(max-width: 499px){
+  .headerMenu--list{
+    display: none;
+  }
+}
+
+@media(min-width: 500px){
+  .smallLogoIllustrationHeader{
+    order: 1;
+    position: absolute;
+    left: 0;
+    height: 37px;
+    top: -3px;
+
+  }
+  .headerMenu--list{
+    order: 2;
+  }
+}

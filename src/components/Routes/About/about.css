@@ -1,0 +1,130 @@
+.aboutPageContainer{
+  overflow: hidden;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+
+.overlay{
+
+    padding:0;
+    margin:0;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255, 0.95);
+    z-index: -1;
+
+}
+
+.about {
+  position: absolute;
+  padding:0;
+  margin:0;
+  top: 0px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../images/backdrop/backdrop_3.jpg");
+  background-size: cover;
+  z-index: -2;
+}
+
+
+.sound  {
+position: absolute;
+top: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../images/backdrop/backdrop_2.jpg");
+  background-size: cover;
+  z-index: -2;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+
+.infoLogo  {
+  
+  position: absolute;
+  top: 200%;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    left: 0;
+  }
+
+  .contentInfoLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  }
+  
+ .logo > img {
+   width: 200px;
+   padding: 40px;
+ }
+
+
+@media(min-width: 700px){
+  .sound{
+    /* background-size: contain; */
+  }
+}
+
+.overlayBlackSound{
+  position: absolute;;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.69);
+  z-index: 0;
+
+}
+
+
+.contentSound{
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    max-width: 800px;
+
+}
+
+
+/*overwrite style Menu component */ 
+.headerMenu{
+  box-shadow: 0px -1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contentAbout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: camptonLight;
+  max-width: 800px;
+}
+
+
+
+
+@media (max-width: 500px){
+  .contentAbout,
+  .contentSound{
+    font-size: 12px;
+  }
+}

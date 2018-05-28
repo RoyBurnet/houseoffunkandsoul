@@ -1,0 +1,121 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'camptonLight';
+  background-image: url("../../images/backdrop/backdrop_main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative; */
+
+
+  .flip-container {
+    perspective: 1000px;
+  }
+  
+  .cardBackdrop {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+  
+      transform: rotateY(180deg);
+    }
+  
+  .flip-container, .card {
+    width: 296px;
+    height: 456px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    position: relative;
+  }
+  
+  .card {
+  
+  backface-visibility: hidden;
+  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border-radius: 20px; */
+    box-shadow: 1px 2px 4px 5px  rgba(0, 0, 0, 0.4);
+    background: white;
+  }
+  
+  .card > img {
+    height: auto;
+    width: 274px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  @media(min-width: 320px) and (max-width: 500px){
+      .card > img{
+        height: auto;
+        width: 165px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .card{
+        width: 195px;
+        height: 288px;
+        left: 15%;
+      }
+
+      .flip-container{
+        top: 66%;
+      }
+      
+      .cardBackdrop{
+        width: 200%;
+        left: -150px;
+      }
+      
+  }
+  
+  
+  .card--front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  .card--back {
+    transform: rotateY(180deg); 
+  }
+  
+
+  .card-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    text-align: center;
+
+  }
+  
+  

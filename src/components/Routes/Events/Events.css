@@ -1,0 +1,70 @@
+.overlayBlack{
+  position:absolute;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.7);
+  z-index: 1;
+
+}
+.aboutEvents {
+  overflow: visible;
+}
+
+.aboutEvents > img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+height: 100%;
+}
+
+.EventsContent{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  width: 300px;
+  font-size: 16px;
+
+}
+
+.EventsContent > img {
+
+  align-self: center;
+  width: 200px;
+  filter: invert(100%);
+
+}
+
+/* .EventsContent > h2 {
+  overflow: hidden;
+}
+
+.date{
+  overflow: hidden;
+} */
+
+
+
+
+@media (max-width: 500px){
+  .releasesContent{
+    width: 300px;
+    font-size: 12px;
+  }
+
+}
+
+.bold {
+  font-family: "camptonBold";
+}
