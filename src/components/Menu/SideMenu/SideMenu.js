@@ -79,8 +79,8 @@ class SideMenu extends Component {
         </div>
 
         <span className="socialHolder">
-        <img src={facebook} alt="" className="socialLogo"/>
-        <img src={instagram} alt="" className="socialLogo"/>
+        <a href="http://wwww.fb.me/houseoffunkandsoul"><img src={facebook} alt="" className="socialLogo"/></a>
+        <a href="https://www.instagram.com/house_of_funk_and_soul"><img src={instagram} alt="" className="socialLogo"/></a>
         </span>
 
       </Menu>
