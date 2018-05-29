@@ -80,7 +80,7 @@ class Form extends Component {
       emailError: '',
       text: ''
     })
-    console.log(this.state)
+
     }
 
     const messageRef = fire.database().ref('messages');
@@ -91,7 +91,7 @@ class Form extends Component {
       text: this.state.text
     }
 
-    console.log(message)
+
     messageRef.push(message);
 
   }

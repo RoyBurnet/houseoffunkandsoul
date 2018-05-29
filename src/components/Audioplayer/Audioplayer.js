@@ -8,7 +8,7 @@ class Audioplayer extends Component {
       {
         url: 
         'http://houseoffunkandsoul.com/track1.mp3',
-        title: "Fes Travanganza - NINA"
+        title: "Fes Travaganza - NINA"
       }
     ]
 
@@ -17,7 +17,7 @@ class Audioplayer extends Component {
     return (
       <div className="audioPlay">
         <AudioPlayer playlist={playlist}
-        autoplay={false}
+        autoplay={true}
         autoplayDelayInSeconds={2.1}
         style={{ position: 'fixed', bottom: 0 }} 
         controls={controls}
