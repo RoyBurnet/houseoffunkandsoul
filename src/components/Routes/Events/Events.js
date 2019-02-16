@@ -10,7 +10,7 @@ const EventsPage = () => {
       <img src={aboutBackdropReleases} alt=""/>
       <div className="EventsContent">
         <img src={hfslogoimg} alt=""/>
-        <h2>31  08 2018</h2> <p>LABEL NIGHT  <span className="bold">BIRD ROTTERDAM</span>  </p>
+        <h2>26  04 2019</h2><p>KINGSNIGHT<span className="bold"> BIRD ROTTERDAM</span>  </p>
       </div>
     </div>
   );
